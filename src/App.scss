@@ -1,44 +1,106 @@
+body{
+    background-color: rgb(226, 226, 226) !important;
+}
 .carousel-img {
     width: 100%;
     height: 500px;
     opacity: 0.9;
 }
-.c_text{
-    h1{
-        color: rgb(251, 255, 0);
-        background-color: rgba(255, 0, 0, 0.346);
-    }
-    h1:hover{
-         background-color: red;
-    }
-    p{
-        color: black;
-        background-color: rgba(255, 255, 255, 0.509);
-        padding: 10px;
-    }
-    p:hover{
-        background-color: white;
-        font-weight: bold;
-    }
-    button{
-background-color: rgba(0, 128, 0, 0.521); 
-width: 15vw;   
-font-weight: bold;
-color: white;
+// .c_text{
+//     h1{
+//         color: rgb(251, 255, 0);
+//         background-color: rgba(255, 0, 0, 0.346);
+//     }
+//     h1:hover{
+//          background-color: red;
+//     }
+//     p{
+//         color: black;
+//         background-color: rgba(255, 255, 255, 0.509);
+//         padding: 10px;
+//     }
+//     p:hover{
+//         background-color: white;
+//         font-weight: bold;
+//     }
+//     button{
+// background-color: rgba(0, 128, 0, 0.521); 
+// width: 15vw;   
+// font-weight: bold;
+// color: white;
+// }
+// button:hover{
+//     background-color: green;
+// }
+// }
+.intro_section{
+    display: flex;
+    padding: 2vw;
+    width: 40vw;
+    justify-content: space-evenly;
+background-color: white;
 }
-button:hover{
-    background-color: green;
+.photo{
+    flex-basis: 40vw!important;
+    box-shadow: 1px 0 3px 3px grey;
 }
+.intro{
+    flex-basis: 40% !important;
 }
-
+.strength {
+    padding: 2vw;
+    background-color: rgb(100, 25, 112);
+    color: white;
+}
+.text-container{
+display: flex;
+flex-direction: row;
+}
+.first_str{
+    border-right: 1px solid white;
+}
+.getintouch{
+    input{
+        // margin: 1vw;
+        padding: 0.8vw;
+        width: 100%;
+    }
+}
 @media screen and (max-width:768px) {
-    .carousel-img{
-        height: 300px;
+    .first_str{
+        border-right:none;
+        border-bottom: 1px solid white;
     }
-    .c_text{
-        button{
-            width: 35vw;
-        }
+    .form_cont{
+        flex-direction:column !important;
     }
+.intro_section{
+    flex-direction: column !important;
+    padding: 4vw!important;
+}
+.text-container{
+flex-direction: column;
+padding: 2vw;
+}
 
+.footer{
+    height: auto;
+    padding: 5vh;
+}
+.footer_lower{
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+.queryBox{
+    width: 50vw;
+    input{
+        width: 40vw;
+        height: 50px;
+        border-radius: 7px;
+    }
+}
+.contactus,.address{
+    border-bottom: 1px dashed white;
+}
 }
