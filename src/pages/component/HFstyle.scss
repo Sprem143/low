@@ -1,3 +1,20 @@
-.me-auto{
-    
+.navbar-toggler{
+background-color: white !important;
+}
+.bg-body-dark{
+    background-color: rgb(23, 23, 57);
+    a{
+        color: white;
+        margin: 0 1rem;
+    }
+    a:hover{
+        color: aqua;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .links_container{
+        flex-direction: column;
+    }
 }
